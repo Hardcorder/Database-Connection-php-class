@@ -29,6 +29,22 @@ Version 1.0 uses Mysqli.
 	
 	$dbase->closeConnection(); // Close the connection with the Database
 	
+List of all functions
+
+	db_connect(host, user, pass, dbName) # Connect to database Returning (boolean)
+	retryConnection() # Retry the connection to the database
+	closeConnection() # close the connection return boolean
+	changeDb(dbName) # Change the database connection to another
+	getError() # Returns the last error occurred on the database
+	getDb() # Return Database Name (String)
+	isConnected() # Returns if you'r connected to the database (boolean)
+	getTable(table) # Returns the table in array
+	getColum(table, key, value, limit) # Return the colum in a string
+	insertQuery(query) # Inserts a query returning boolean
+	insertQueryReturn(query) # Makes a query and Return array with results
+	getNumLines(table) # Return number of lines on a table
+	getNumLinesSearch(table, key, value) # Return number of lines witg a key = value
+	
 Version 2.0 uses PDO * Work in progress *
 
 The program is free to use.
