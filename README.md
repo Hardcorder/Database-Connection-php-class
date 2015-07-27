@@ -2,7 +2,7 @@
 A Free Php Database Connection make the querys faster and easyer
 
 Version 1.0 uses Mysqli.
-| Code |
+
 	require_once("db.php"); // Require the File
 	$dbase = new db();		// Create new Instance
 	$dbase->db_connect("hostname", "username", "password", "DatabaseName"); // Connect to a database!
